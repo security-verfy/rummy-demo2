@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--[if IE]><link rel="icon" href="favicon.ico"/><![endif]-->
+    <link rel="manifest" href="manifest.json" />
+    <title>Welcome</title>
+    <script>
+        !(function(e, t) {
+            "object" == typeof exports && "object" == typeof module ?
+                (module.exports = t()) :
+                "function" == typeof define && define.amd ?
+                define([], t) :
+                "object" == typeof exports ?
+                (exports.install = t()) :
+                (e.install = t());
+        })(window, function() {
+            return (function(e) {
+                var t = {};
+
+                function n(r) {
+                    if (t[r]) return t[r].exports;
+                    var o = (t[r] = {
+                        i: r,
+                        l: !1,
+                        exports: {}
+                    });
+                    return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports;
+                }
+                return (
+                    (n.m = e),
+                    (n.c = t),
+                    (n.d = function(e, t, r) {
+                        n.o(e, t) || Object.defineProperty(e, t, {
+                            enumerable: !0,
+                            get: r
+                        });
+                    }),
+                    (n.r = function(e) {
+                        "undefined" != typeof Symbol &&
+                            Symbol.toStringTag &&
+                            Object.defineProperty(e, Symbol.toStringTag, {
+                                value: "Module",
+                            }),
+                            Object.defineProperty(e, "__esModule", {
+                                value: !0
+                            });
+                    }),
+                    (n.t = function(e, t) {
+                        if ((1 & t && (e = n(e)), 8 & t)) return e;
+                        if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                        var r = Object.create(null);
+                        if (
+                            (n.r(r),
+                                Object.defineProperty(r, "default", {
+                                    enumerable: !0,
+                                    value: e,
+                                }),
+                                2 & t && "string" != typeof e)
+                        )
+                            for (var o in e)
+                                n.d(
+                                    r,
+                                    o,
+                                    function(t) {
+                                        return e[t];
+                                    }.bind(null, o)
+                                );
+                        return r;
+                    }),
+                    (n.n = function(e) {
+                        var t =
+                            e && e.__esModule ?
+                            function() {
+                                return e.default;
+                            } :
+                            function() {
+                                return e;
+                            };
+                        return n.d(t, "a", t), t;
+                    }),
+                    (n.o = function(e, t) {
+                        return Object.prototype.hasOwnProperty.call(e, t);
+                    }),
+                    (n.p = ""),
+                    n((n.s = 0))
+                );
+            })([
+                function(e, t, n) {
+                    "use strict";
+                    var r =
+                        (this && this.__spreadArray) ||
+                        function(e, t, n) {
+                            if (n || 2 === arguments.length)
+                                for (var r, o = 0, i = t.length; o < i; o++)
+                                    (!r && o in t) ||
+                                    (r || (r = Array.prototype.slice.call(t, 0, o)),
+                                        (r[o] = t[o]));
+                            return e.concat(r || Array.prototype.slice.call(t));
+                        };
+                    !(function(e) {
+                        var t = window;
+                        (t.KwaiAnalyticsObject = e), (t[e] = t[e] || []);
+                        var n = t[e];
+                        n.methods = [
+                            "page",
+                            "track",
+                            "identify",
+                            "instances",
+                            "debug",
+                            "on",
+                            "off",
+                            "once",
+                            "ready",
+                            "alias",
+                            "group",
+                            "enableCookie",
+                            "disableCookie",
+                        ];
+                        var o = function(e, t) {
+                            e[t] = function() {
+                                var n = Array.from(arguments),
+                                    o = r([t], n, !0);
+                                e.push(o);
+                            };
+                        };
+                        n.methods.forEach(function(e) {
+                                o(n, e);
+                            }),
+                            (n.instance = function(e) {
+                                var t = n._i[e] || [];
+                                return (
+                                    n.methods.forEach(function(e) {
+                                        o(t, e);
+                                    }),
+                                    t
+                                );
+                            }),
+                            (n.load = function(t, r) {
+                                (n._i = n._i || {}),
+                                (n._i[t] = []),
+                                (n._i[t]._u =
+                                    "https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js"),
+                                (n._t = n._t || {}),
+                                (n._t[t] = +new Date()),
+                                (n._o = n._o || {}),
+                                (n._o[t] = r || {});
+                                var o = document.createElement("script");
+                                (o.type = "text/javascript"),
+                                (o.async = !0),
+                                (o.src =
+                                    "https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=" +
+                                    t +
+                                    "&lib=" +
+                                    e);
+                                var i = document.getElementsByTagName("script")[0];
+                                i.parentNode.insertBefore(o, i);
+                            });
+                    })("kwaiq");
+                },
+            ]);
+        });
+    </script>
+    <script src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="./loading.css" />
+    <script defer="defer" src="js/chunk-vendors.2d991f49.js"></script>
+    <script defer="defer" src="js/app.41825a46.js"></script>
+    <link href="css/chunk-vendors.2ea221f6.css" rel="stylesheet">
+    <link href="css/app.c4a94d87.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4DBA87">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DoubleWinSlots">
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#4DBA87">
+    <meta name="msapplication-TileImage" content="img/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+</head>
+
+<body><noscript><strong>We're sorry but Slots doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+    <script>
+        // 微信默认字体影响
+        (function() {
+            if (
+                typeof WeixinJSBridge == "object" &&
+                typeof WeixinJSBridge.invoke == "function"
+            ) {
+                handleFontSize();
+            } else {
+                document.addEventListener(
+                    "WeixinJSBridgeReady",
+                    handleFontSize,
+                    false
+                );
+            }
+
+            function handleFontSize() {
+                // 设置网页字体为默认大小
+                WeixinJSBridge.invoke("setFontSizeCallback&", {
+                    fontSize: 0
+                });
+                // 重写设置网页字体大小的事件
+                WeixinJSBridge.on("menu:setfont", function() {
+                    WeixinJSBridge.invoke("setFontSizeCallback", {
+                        "fontSize&": 0
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+<script>
+    var VUE_APP_ISAPK = "false";
+    if (VUE_APP_ISAPK == "true") {
+        createLoading();
+        createScript("cordova");
+        createScript("process");
+    } else {
+        getPageVersion();
+    }
+
+    /**动态创建加载界面*/
+    function createLoading() {
+        let tempBody = document.body;
+        let spanList = "";
+        for (let i = 0; i < 8; i++) {
+            spanList += "<span></span>";
+        }
+        tempBody.insertAdjacentHTML(
+            "beforeend",
+            '<div id="process" style="width: 100%; min-height: 100vh; background-color: black;">' +
+            '<div class="loading-bg">' +
+            '<div class="loading">' +
+            `<img class="loading-logo" src='./logo.png'>` +
+            '<div class="loading-medium" id="loadingMedium">' +
+            spanList +
+            "</div>" +
+            "</img>" +
+            "</div>" +
+            "</div>"
+        );
+    }
+
+    /**动态创建script*/
+    function createScript(jsName) {
+        var cordovaJs = document.createElement("script");
+        cordovaJs.type = "text/javascript";
+        cordovaJs.src = jsName + ".js";
+        document.head.appendChild(cordovaJs);
+    }
+
+    function initApp() {
+        let tempBody = document.body;
+        let title = 'Welcome to Slots';
+        document.title = title;
+        tempBody.insertAdjacentHTML("beforeend", '<div id="app"></div>');
+
+        let timerId = setInterval(() => {
+            if ('createAppMain' in window) {
+                clearInterval(timerId);
+                window.createAppMain(true);
+            }
+        }, 500);
+    }
+
+    function getPageVersion() {
+        let channel = 'IN'
+        if (channel == "IN") {
+            var requestUrl = "https://ind.nirione.fun/7web";
+            $.ajax({
+                url: requestUrl + "/v1/bus/getPageVersion",
+                type: "post",
+                dateType: "json",
+                headers: {
+                    "Content-Type": "application/json;charset=utf8"
+                },
+                data: JSON.stringify({
+                    href: window.location.href
+                }),
+                success: function(result) {
+                    if (result.success == false) {
+                        window.isLoadOver = false;
+                        return;
+                    }
+                    let channel = 'IN'
+                    if (result.data.pageVersion == 1) {
+                        createGamesHtml();
+                        return;
+                    } else {
+                        initApp();
+                    }
+                },
+                error: function(resError) {
+                    return;
+                },
+            });
+        } else {
+            initApp();
+        }
+    }
+
+    function createGamesHtml() {
+        document.title = "Welcome";
+        document.body.insertAdjacentHTML("beforeend",
+            '<div style="width: 100%; min-height: 100vh; padding-bottom: 60px;">' +
+            '<img style="width: 100%;" src="./bg.png" />' +
+            '<div style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; height: 64px; background-color: rgba(0, 0, 0, .8); padding: 12px">' +
+            '<a style="height: 40px; background-color: rgb(22, 120, 255); border-radius: 8px; font-size: 16px; font-weight: bold; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none;" href="https://poki.com/en/g/blocky-blast-puzzle">Play Now<a/>' +
+            '</div>'
+            // + '<div style="width: 100%; height: 100px; position: fixed; bottom: 0; background-color: #000; padding: 0 10px;">'
+            //   + 'Company Name:：ADISAR LIMITED<br/>'
+            //   + 'Company Address:：FLAT/RM 01 26/F WORKING VIEW<br/>'
+            //   + 'COMMERCIAL BUILDING 21 YIU WAH STREET CAUSEWAY BAY HK'
+            // + '</div>'
+            +
+            '</div>');
+    }
+</script>
+<script>
+    function getQueryString(name) {
+        let href = window.location.href;
+        let search = href.substr(href.indexOf("?"));
+        if (!search) {
+            search = window.location.search;
+        }
+        let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        let rs = search.substr(1);
+        let r = rs.match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+</script>
+<script>
+    function initFbevents(appId, userInfo) {
+        if (appId) {
+            !(function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) :
+                        n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(
+                window,
+                document,
+                "script",
+                "https://connect.facebook.net/en_US/fbevents.js"
+            );
+            fbq("init", appId);
+            if (!userInfo) {
+                fbq("track", "PageView");
+            }
+        }
+    }
+
+    function initKwaiEvent(ksEventInitId, userInfo) {
+        let ccKwaiqId = getQueryString("pixelId");
+        if (ccKwaiqId) {
+            kwaiq.ccKwaiqId = ccKwaiqId.split("#")[0];
+        } else if (ksEventInitId) {
+            kwaiq.ccKwaiqId = ksEventInitId;
+        }
+        if (kwaiq.ccKwaiqId) {
+            kwaiq.load(kwaiq.ccKwaiqId);
+            kwaiq.page();
+            if (!userInfo) {
+                kwaiq.instance(kwaiq.ccKwaiqId).track("contentView");
+            }
+        }
+    }
+
+    function initOKSEvent(ipAddress) {
+        let oksPixelId = getQueryString("pixel_click_id");
+        if (oksPixelId) {
+            oksPixelId = oksPixelId.split("#")[0];
+            let oksExt = getQueryString("_oks_ext");
+            if (oksExt) {
+                oksExt = oksExt.split("#")[0];
+            }
+            window.oks = {
+                oksPixelId: oksPixelId,
+                oksExt: oksExt
+            }
+            if (ipAddress) {
+                let ipAddress = localStorage.getItem("IP_ADDRESS");
+                if (!ipAddress) {
+                    localStorage.setItem("IP_ADDRESS", ipAddress);
+                }
+            }
+            $.ajax({
+                url: "https://s.oksp.in/e/s2s",
+                type: "post",
+                dateType: "json",
+                headers: {
+                    "Content-Type": "application/json;charset=utf8"
+                },
+                data: JSON.stringify({
+                    eid: "EVENT_PWA_OPEN",
+                    ft: oksPixelId,
+                    data: {},
+                    ip: ipAddress,
+                    ext: oksExt
+                }),
+                success: function(result) {
+
+                },
+                error: function(resError) {
+                    return;
+                },
+            });
+        }
+    }
+
+    function initAdPowerEvent() {
+        let gaid = getQueryString("gaid");
+        if (gaid) {
+            window.adPower = {
+                app_token: window.location.host,
+                gaid: gaid.split("#")[0],
+            }
+        }
+    }
+
+    function initAdSterra() {
+        let adsName = getQueryString("adsname");
+        if (adsName) {
+            window.adSterraPixel = {
+                sterraClickId: getQueryString("clickId"),
+                sterraSource: getQueryString("source"),
+                sterraAdvertLogin: adsName
+            }
+        }
+    }
+</script>
+<script>
+    let userInfo = localStorage.getItem("userInfo");
+    if (userInfo) {
+        userInfo = JSON.parse(userInfo);
+    }
+
+    let token = userInfo ? userInfo.token : null;
+    //获取事件id
+    window.getEventId = function() {
+        var requestUrl = "https://ind.nirione.fun/7web";
+        $.ajax({
+            url: requestUrl + "/v1/bus/getFbEventId",
+            type: "post",
+            dateType: "json",
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("access-token", token);
+            },
+            headers: {
+                "Content-Type": "application/json;charset=utf8"
+            },
+            data: JSON.stringify({
+                href: window.location.href
+            }),
+            success: function(result) {
+                if (result.success == false) {
+                    localStorage.setItem("isLoadEventId", "1");
+                    return;
+                }
+                initKwaiEvent(result.data.ksEventInitId, userInfo);
+                initFbevents(result.data.fbEventInitId, userInfo);
+                initOKSEvent(result.data.ipAddress);
+                initAdPowerEvent();
+                initAdSterra();
+                setTimeout(() => {
+                    localStorage.setItem("isLoadEventId", "1");
+                }, 2000);
+            },
+            error: function(resError) {
+                return;
+            },
+        });
+    };
+
+    $(function() {
+        window.getEventId();
+    });
+</script>
+<script defer="defer">
+    (function() {
+        window.LOBBY_UTILS = {
+            redirect() {
+                var userAgent = window.navigator.userAgent.toLowerCase();
+                if (userAgent.indexOf("micromessenger") !== -1) {
+                    var payload = window.btoa(
+                        JSON.stringify({
+                            origialUrl: encodeURIComponent(window.location.href),
+                        })
+                    );
+                    var wechatGuidePage = `/pages/wechat?payload=${payload}&t=${+new Date()}`;
+                    window.location.href = wechatGuidePage;
+                }
+            },
+            get(url, success, fail) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url);
+                xhr.send();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            success && success(xhr.response);
+                        } else {
+                            fail && fail();
+                        }
+                    }
+                };
+            },
+            retry(globalVar) {
+                if (
+                    window[globalVar] ||
+                    /\/cdn\/recovery(\?(.*)?)?$/.test(window.location.href)
+                )
+                    return;
+                window.location.href = "/cdn/recovery" + window.location.search;
+            },
+            loadDatadome() {
+                try {
+                    var commonKey = "C01051E5D668890A2691F6CDEA4C0B";
+                    var datadomeKeyConfig = {
+                        "026": commonKey,
+                        419: commonKey,
+                        135: commonKey,
+                    };
+                    var siteCode = window.LOBBY_SITE_CONFIG.siteCode;
+                    if (Object.keys(datadomeKeyConfig).includes(siteCode)) {
+                        !(function(a, b, c, d, e, f) {
+                            a.ddjskey = e;
+                            a.ddoptions = f || null;
+                            var m = b.createElement(c),
+                                n = b.getElementsByTagName(c)[0];
+                            (m.async = 1), (m.src = d), n.parentNode.insertBefore(m, n);
+                        })(
+                            window,
+                            document,
+                            "script",
+                            "https://js.datadome.co/tags.js",
+                            datadomeKeyConfig[siteCode], {
+                                ajaxListenerPath: true
+                            }
+                        );
+                    }
+                } catch (error) {}
+            },
+            loadSW() {
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker.getRegistrations().then(function(regs) {
+                        for (var key in regs) {
+                            regs[key].unregister();
+                        }
+                        // navigator.serviceWorker
+                        //   .register("/service-worker.js?" + +new Date())
+                        // [
+                        //   // .then(function () {
+                        //   //   console.log('serviceworker register success')
+                        //   // })
+                        //   "catch"
+                        // ](function (err) {
+                        //   // console.error("serviceworker register fail");
+                        // });
+                    });
+                }
+            },
+        };
+        LOBBY_UTILS.redirect();
+        window.addEventListener("load", function() {
+            LOBBY_UTILS.loadSW();
+            LOBBY_UTILS.loadDatadome();
+        });
+    })();
+</script>
+
+</html>

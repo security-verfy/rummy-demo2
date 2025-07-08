@@ -1,0 +1,229 @@
+@keyframes load {
+    0% {
+        transform: scale(1);
+        background-color: #fff;
+        opacity: 0;
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.1);
+        background-color: #efefef;
+        opacity: 0.75;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #e9e9e9;
+        opacity: 0.5;
+    }
+    75% {
+        transform: scale(1.2);
+        background-color: #909090;
+        opacity: 0.25;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #505050;
+        opacity: 0;
+    }
+}
+
+/* 
+    小：.loading-small
+    中:.loading-medium
+    大：.loading-large
+*/
+
+.loading-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #211c4f, #4c2a38, #192c60, #252858, #1b2158);
+    /* background: repeating-linear-gradient(to top left,#0088a9,#00c9a7 5px,#92d5c6 5px,#ebf5ee 10px); */
+    z-index: 99999;
+    /* animation: button-shine 45s linear infinite; */
+}
+
+.loading {
+    width: 100%;
+    height: 110px;
+    /* height: 200px; */
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    background: none !important;
+    /* top: 36%; */
+    transform: translate(-50%, -50%);
+}
+
+.loading-medium {
+    min-width: 55px;
+    height: 55px;
+    position: fixed;
+    left: 50%;
+    top: 68%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+.loading-medium.loading-small {
+    width: 25px;
+    height: 25px;
+}
+
+.loading-medium span {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #efefef;
+    border-radius: 50%;
+    animation: load 1s linear infinite;
+}
+
+.loading-medium.loading-small span {
+    width: 4px;
+    height: 4px;
+}
+
+/* 每个圈圈的位置设置，和动画执行的时间 */
+
+.loading-medium span:first-child {
+    top: 0;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-top: -1px;
+    animation-delay: 0s;
+}
+
+.loading-medium span:nth-child(2) {
+    top: 25%;
+    right: 25%;
+    margin-top: -6.5px;
+    margin-right: -7px;
+    animation-delay: 0.125s;
+}
+
+.loading-medium.loading-small span:nth-child(2) {
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.loading-medium span:nth-child(3) {
+    top: 50%;
+    right: 0;
+    margin-top: -2.5px;
+    margin-right: -1px;
+    animation-delay: 0.25s;
+}
+
+.loading-medium span:nth-child(4) {
+    bottom: 25%;
+    right: 25%;
+    margin-bottom: -6.5px;
+    margin-right: -7px;
+    animation-delay: 0.375s;
+}
+
+.loading-medium.loading-small span:nth-child(4) {
+    margin-bottom: -5px;
+    margin-left: -5px;
+}
+
+.loading-medium span:nth-child(5) {
+    bottom: 0;
+    left: 50%;
+    margin-left: -2.5px;
+    margin-bottom: -1px;
+    animation-delay: 0.5s;
+}
+
+.loading-medium span:nth-child(6) {
+    bottom: 25%;
+    left: 25%;
+    margin-left: -7px;
+    margin-bottom: -6.5px;
+    animation-delay: 0.625s;
+}
+
+.loading-medium.loading-small span:nth-child(6) {
+    margin-bottom: -5px;
+    margin-right: -5px;
+}
+
+.loading-medium span:nth-child(7) {
+    top: 50%;
+    left: 0;
+    margin-top: -2.5px;
+    margin-left: -1px;
+    animation-delay: 0.75s;
+}
+
+.loading-medium span:last-child {
+    top: 25%;
+    left: 25%;
+    margin-top: -6.5px;
+    margin-left: -7px;
+    animation-delay: 0.875s;
+}
+
+.loading-medium.loading-small span:last-child {
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.loading-logo {
+    width: 180px;
+    position: absolute;
+    left: 50%;
+    margin-top: -14%;
+    transform: translateX(-50%);
+}
+
+.pressed {
+    width: 300px;
+    /* background-color: #505050; */
+    height: 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 2px solid #b87631;
+}
+
+#pressing {
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+    height: 100%;
+    border-radius: 6px;
+    text-align: center;
+    /* animation: button-shine 45s linear infinite; */
+    transition: all 1s;
+    width: 0%;
+}
+
+#example {
+    width: 100%;
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@-webkit-keyframes button-shine {
+    0% {
+        background-position: -1000px 0
+    }
+    to {
+        background-position: 1000px 0
+    }
+}
+
+@keyframes button-shine {
+    0% {
+        background-position: -1000px 0
+    }
+    to {
+        background-position: 1000px 0
+    }
+}
